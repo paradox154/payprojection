@@ -1,0 +1,142 @@
+/* Reset default styles for consistent rendering across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body settings */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e0f2f1; /* Light seafoam green */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00695c; /* Dark seafoam green */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #009688; /* Medium seafoam green */
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #4db6ac; /* Lighter seafoam green */
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #009688; /* Medium seafoam green */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+
+/* Layout */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #00695c; /* Dark seafoam green */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Main content area */
+main {
+    padding: 2rem 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #00695c; /* Dark seafoam green */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility classes */
+.btn {
+    display: inline-block;
+    background: #009688; /* Medium seafoam green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #00796b; /* Slightly darker medium seafoam green */
+}
+
+/* Flexbox utility */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
